@@ -1,0 +1,20 @@
+Ans of 1:
+class Add:
+    def __init__(self,valu1,valu2):
+        addition=value1+valu2
+        print(addition)
+value1=int(input("Enter first numner: "))
+value2=int(input("Enter secand numner: "))
+obj=Add(value1,value2)
+
+
+Ans of 2:
+class Add:
+    def __init__(self,valu1,valu2):
+        addition=value1+valu2
+        print(addition)
+value1=int(input("Enter first numner: "))
+value2=int(input("Enter secand numner: "))
+obj=Add(value1,value2)
+
+
