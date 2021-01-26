@@ -1,0 +1,88 @@
+Ans of 1:
+5 sorting algorithms
+Bubble sort and Insertion sort –
+Average and worst case time complexity: n^2
+Best case time complexity: n when array is already sorted.
+Worst case: when the array is reverse sorted.
+Selection sort –
+Best, average and worst case time complexity: n^2 which is independent of distribution of data.
+Merge sort –
+Best, average and worst case time complexity: nlogn which is independent of distribution of data.
+Heap sort –
+Best, average and worst case time complexity: nlogn which is independent of distribution of data.
+Quick sort –
+It is a divide and conquer approach with recurrence relation:
+ T(n) = T(k) + T(n-k-1) + cn
+Worst case: when the array is sorted or reverse sorted, the partition algorithm divides the array in two subarrays with 0 and n-1 elements.
+
+Ans of 2:
+Selection Sort
+
+import sys 
+A = [64, 25, 12, 22, 11] 
+
+
+for i in range(len(A)): 
+	
+	min_idx = i 
+	for j in range(i+1, len(A)): 
+		if A[min_idx] > A[j]: 
+			min_idx = j 
+			
+ 
+	A[i], A[min_idx] = A[min_idx], A[i] 
+print ("Sorted array") 
+for i in range(len(A)): 
+	print("%d" %A[i]), 
+  
+  Ans of 3:
+  # Python program to 
+# demonstrate stack implementation
+# using list
+
+
+stack = []
+
+stack.append('a')
+stack.append('b')
+stack.append('c')
+
+print('Initial stack')
+print(stack)
+
+
+print('\nElements poped from stack:')
+print(stack.pop())
+print(stack.pop())
+print(stack.pop())
+
+print('\nStack after elements are poped:')
+print(stack)
+
+
+Ans of 4:
+
+import collections
+de = collections.deque([1,2,3])
+de.append(4)
+
+
+print ("The deque after appending at right is : ")
+print (de)
+
+
+de.appendleft(6)
+print ("The deque after appending at left is : ")
+print (de)
+
+
+de.pop()
+
+print ("The deque after deleting from right is : ")
+print (de)
+
+de.popleft()
+
+print ("The deque after deleting from left is : ")
+print (de)
+
